@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility Detector</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <audio id="alarmSound" src="https://www.soundjay.com/buttons/beep-01a.mp3"></audio>
+
+    <script>
+        // Get the audio element
+        const alarm = document.getElementById('alarmSound');
+        
+        // Function to update page state
+        function updatePageState() {
+            if (document.visibilityState === "visible") {
+                // Page is visible - set green background and stop alarm
+                document.body.style.backgroundColor = "green";
+                alarm.pause();
+                alarm.currentTime = 0; // Reset audio to start
+            } else {
+                // Page is hidden - set red background and play alarm
+                document.body.style.backgroundColor = "red";
+                alarm.loop = true; // Make alarm continuous
+                alarm.play();
+            }
+        }
+
+        // Initial state
+        updatePageState();
+
+        // Listen for visibility changes
+        document.addEventListener("visibilitychange", updatePageState);
+
+        // Also check for window focus/blur as additional detection
+        window.addEventListener("focus", function() {
+            document.body.style.backgroundColor = "green";
+            alarm.pause();
+            alarm.currentTime = 0;
+        });
+
+        window.addEventListener("blur", function() {
+            document.body.style.backgroundColor = "red";
+            alarm.loop = true;
+            alarm.play();
+        });
+    </script>
+</body>
+</html>
