@@ -1,7 +1,7 @@
 # Tab Focus Alarm
 A simple yet effective full-screen webpage that alerts you when you switch tabs, windows, or minimize the browser, perfect for staying focused.
 
-![image](assets/images/example.png)
+![image](/example.png)
 
 - **Full-screen design**: Takes up the entire browser window for maximum visibility
 - **Dynamic background**: Green when focused, red when unfocused
