@@ -1,9 +1,4 @@
-Here’s your README transformed into the requested format:
-
----
-
 # Tab Focus Alarm
-
 A simple yet effective full-screen webpage that alerts you when you switch tabs, windows, or minimize the browser, perfect for staying focused.
 
 ![image](assets/images/example.png)
