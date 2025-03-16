@@ -1,23 +1,43 @@
-This code performs the following actions:
+Here’s your README transformed into the requested format:
 
-1. Creates a full-screen webpage.
-2. Changes the background to green when the page is visible or focused.
-3. Changes the background to red and plays an alarm sound when:
-    - The tab is switched.
-    - The window is switched.
-    - The browser is minimized.
-4. Utilizes both `visibilitychange` and `focus/blur` events for enhanced detection.
-5. Includes a smooth color transition effect.
-6. Uses a simple beep sound from a public domain source (you can replace it with any audio URL).
+---
 
-To use this code:
+# Tab Focus Alarm
 
-1. Save it as `index.html`.
+A simple yet effective full-screen webpage that alerts you when you switch tabs, windows, or minimize the browser, perfect for staying focused.
+
+![image](assets/images/example.png)
+
+- **Full-screen design**: Takes up the entire browser window for maximum visibility
+- **Dynamic background**: Green when focused, red when unfocused
+- **Audio alert**: Plays a beep sound when focus is lost
+- **Smooth transitions**: Color changes with a subtle animation effect
+- **Dual detection**: Uses `visibilitychange` and `focus/blur` events for reliability
+
+[Tab Focus Alarm](https://www.soundjay.com/buttons/beep-01a.mp3) *(Replace with your hosted URL)*
+
+## Features
+- Changes background to green when the page is visible or focused
+- Switches to red and plays an alarm sound when:
+  - You switch tabs
+  - You switch windows
+  - The browser is minimized
+- Includes a smooth color transition for a polished look
+- Uses a public domain beep sound (customizable with any audio URL)
+
+## How to Use
+1. Save the code as `index.html`, `styles.css` & `script.js`.
 2. Open it in a web browser.
-3. Switch tabs or windows to observe the effect.
+3. Switch tabs, windows, or minimize the browser to see and hear the effect.
 
-Notes:
-- The alarm sound requires an internet connection to load the audio file.
-- Some browsers might block autoplay audio until the page is interacted with.
-- You can replace the audio URL with any other sound file you prefer.
-- The page needs to be hosted on a server (local or online) for the audio to work properly due to browser security restrictions.
+## Notes
+- Requires an internet connection to load the alarm sound
+- Some browsers may block autoplay audio until the page is interacted with
+- Replace the audio URL with your preferred sound file if desired
+- Host the page on a server (local or online) for audio to work due to browser security restrictions
+
+Built with HTML, CSS, and JavaScript by [Your Name](https://github.com/yourusername). *(Update with your details)*
+
+--- 
+
+Let me know if you'd like me to tweak anything further or if you have a specific URL or GitHub profile to include!
