@@ -9,6 +9,7 @@ A simple yet effective full-screen webpage that alerts you when you switch tabs,
 - **Smooth transitions**: Color changes with a subtle animation effect
 - **Dual detection**: Uses `visibilitychange` and `focus/blur` events for reliability
 
+[Visibility-Detector](https://diegoaybar.github.io/Visibility-Detector/)
 [Tab Focus Alarm](https://www.soundjay.com/buttons/beep-01a.mp3)
 
 ## Features
@@ -20,15 +21,9 @@ A simple yet effective full-screen webpage that alerts you when you switch tabs,
 - Includes a smooth color transition for a polished look
 - Uses a public domain beep sound (customizable with any audio URL)
 
-## How to Use
-1. Save the code as `index.html`, `styles.css` & `script.js`.
-2. Open it in a web browser.
-3. Switch tabs, windows, or minimize the browser to see and hear the effect.
-
 ## Notes
+- [Initial Click Required for Visibility Detection Sound to Work](https://github.com/diegoaybar/Visibility-Detector/issues/1#issue-2924777344)
 - Requires an internet connection to load the alarm sound
 - Some browsers may block autoplay audio until the page is interacted with
-- Replace the audio URL with your preferred sound file if desired
-- Host the page on a server (local or online) for audio to work due to browser security restrictions
 
 Built with HTML, CSS, and JavaScript by [Diego Aybar](https://github.com/diegoaybar).
